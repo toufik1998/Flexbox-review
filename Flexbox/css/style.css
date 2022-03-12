@@ -1,0 +1,79 @@
+:root {
+  --mainColor: #fdeff4;
+  --secondColor: rgb(255, 161, 201, 0.9);
+  --mainMargin: 0.5rem;
+  --main-box_Shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+body {
+  background-image: linear-gradient(to right, #ff5c8d, #db6b97);
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.page {
+  margin: 10rem;
+  background-color: var(--mainColor);
+  padding-bottom: 0.2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.page .header {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(231, 228, 228);
+}
+
+.page .header div,
+.logo {
+  padding: 1rem 3rem;
+  margin: var(--mainMargin);
+  text-transform: capitalize;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: var(--main-box_Shadow);
+}
+
+.page .header .logo {
+  background-color: var(--secondColor);
+  margin-right: auto;
+}
+
+.page .main-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page .main-area .content,
+.page .main-area .sidebar {
+  background-color: var(--secondColor);
+  margin: var(--mainMargin);
+  height: 20rem;
+  padding: 1rem;
+  box-shadow: var(--main-box_Shadow);
+}
+
+.page .main-area .content {
+  width: 70%;
+}
+
+.page .main-area .sidebar {
+  width: 30%;
+}
+
+.page .footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondColor);
+  padding: 1.5rem;
+  margin: var(--mainMargin);
+  box-shadow: var(--main-box_Shadow);
+}
